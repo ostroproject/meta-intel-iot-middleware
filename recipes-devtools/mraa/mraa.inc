@@ -34,6 +34,11 @@ do_compile_prepend () {
   sed -i 's/-dirty//' src/version.c
 }
 
+### Utils ###
+
+FILES_${PN}-utils = "${bindir}/mraa-gpio \
+                     ${bindir}/mraa-i2c \
+                    "
 
 ### Python ###
 
